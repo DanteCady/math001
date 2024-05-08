@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Welcome To Login App</h1>
+    <h4>Log Into Your Account Below</h4>
+    <p>Login Status:</p>
+    <div id="lgn-status"></div>
+    <div id="totalCountStatus"></div>
+    <div id="lgo-status"></div>
+    <!-- Login Form-->
+    <form onSubmit="login()">
+        <label>Username:</label>
+        <input required required type="text" id="lgn-username">
+        <label>Password:</label>
+        <input required type="password" id="lgn-password">
+        <input required type="submit" value="submit">
+        <br>
+        <div style="margin-top: 15px; width: 50%">
+            <a 
+            id="lgn-pswd-reset"
+            style="text-decoration: solid;"
+            onclick="resetPassword()"
+            href="#">Reset Password
+            </a>
+            <a 
+            id="logout" 
+            style="text-decoration: solid; margin-left: 15px; " 
+            href="#"
+            onclick="logout()"
+            >Log Out</a>
+        </div>
+    </form>
+    <br>
+
+    <!-- Account Creation Form-->
+    <h4>Create Account Below</h4>
+    <p>Account Creation Status:</p>
+    <div id="crt-status"></div>
+    <form onSubmit="createAccount()">
+        <label>First Name:</label>
+        <input required type="text" id="crt-firstname">
+        <label required>Last Name:</label>
+        <input required type="text" id="crt-lastname">
+        <br>
+        <br>
+        <label>Username:</label>
+        <input required type="text" id="crt-username">
+        <label required>Password:</label>
+        <input required type="password" id="crt-password">
+        <input required type="submit" value="submit">
+    </form>
+</body>
+<script src="login008.js"></script>
+
+</html>
